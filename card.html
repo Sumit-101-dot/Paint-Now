@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+<script>
+$(document).ready(function(){
+  $(".containers").hide();
+  $("#display-color").click(function(){
+    $(".containers").toggle();
+    $("h2").show();
+    $("p").show();
+     });
+  });
+</script>
+<!-- <script type="text/javascript">
+  
+
+    //$(document).ready(function () {
+      //  $("#home").change(function () {
+        //    if ($(this).val() == "building") {
+          //      $("#paint").show();
+            //    $("#space").show();
+       //         $("#color").show();
+         //       $("#color1").show();
+           //     $("#display-color").show();
+             //   $("#submit").show();
+
+        //    } else {
+              //  $("#paint").hide();
+           ///     $("#space").hide();
+            //  /  $("#color").hide();
+           //     $("#color1").hide();
+             //   $("#display-color").hide();
+               // $("#submit").hide();
+           // }
+      //  });
+    //});
+
+
+
+
+</script>
+-->
+
+
+</head>
+<body>
+  <div class="form-body">
+    <form action="#" method="post" enctype="multipart/form-data" >
+      <div>
+<span>Project type:</span>
+     <select  id="home">
+      <option value="flat">Flat</option>
+      <option value="villa">Villa</option>
+      <option value="chawl">Chawl</option>
+    </select>
+    
+<div id="paint" >
+  Types of painting:
+
+<input type="radio"  name="fresh" value="Fresh">
+<label for="fresh">Fresh Painting</label>
+<input type="radio"  name="repaint" value="Re-Paint">
+<label for="repaint">Repainting</label>
+
+</div>
+
+<br>
+<div id="space" >
+  Select space:
+      <input type="radio"  name="interior" value="interior">
+<label for="interior">Interior</label>
+<input type="radio"  name="exterior" value="exterior">
+<label for="exterior">Exterior</label>
+</div>
+<br>
+
+<div id="color" >
+  Interior Color
+<select>
+  <option value="color">Antique White</option>
+  <option value="color"> Enlighten N</option>
+  <option value="color"> Buttercup N</option>
+  <option value="color">Apricot N</option>
+  <option value="color">Light Biscuit</option>
+  <option value="color">Coral Shell</option>
+  <option value="color">Marigold</option>
+  <option value="color">Orange Vision</option>
+  <option value="color">Palace Light</option>
+  <option value="color">Mid Cream</option>
+  <option value="color">Cashmere N</option>
+  <option value="color">Green Wispher</option>
+  <option value="color">Bali Blue</option>
+  <option value="color">Summer sky</option>
+  <option value="color">Sultry</option>
+  <option value="color">Soothing Sapphire</option>
+  <option value="color">Hushed Hue</option>
+  <option value="color">Apricot Illusion</option>
+  <option value="color">Aquahint</option>
+  <option value="color">Ivory</option>
+  <option value="color">Midbuff</option>
+  <option value="color">Vivid green</option>
+  <option value="color">Dark Drama</option>
+  <option value="color">Twlight zone</option>
+  <option value="color">Indian Red</option>
+</select>
+</div>
+<br>
+<!-- -->
+<div id="color1" >
+Exterior Color
+<select>
+  <option value="color1">Antique White</option>
+  <option value="color1"> Enlighten N</option>
+  <option value="color1"> Buttercup N</option>
+  <option value="color1">Apricot N</option>
+  <option value="color1">Light Biscuit</option>
+  <option value="color1">Coral Shell</option>
+  <option value="color1">Marigold</option>
+  <option value="color1">Orange Vision</option>
+  <option value="color1">Palace Light</option>
+  <option value="color1">Mid Cream</option>
+  <option value="color1">Cashmere N</option>
+  <option value="color1">Green Wispher</option>
+  <option value="color1">Bali Blue</option>
+  <option value="color1">Summer sky</option>
+  <option value="color1">Sultry</option>
+  <option value="color1">Soothing Sapphire</option>
+  <option value="color1">Hushed Hue</option>
+  <option value="color1">Apricot Illusion</option>
+  <option value="color1">Aquahint</option>
+  <option value="color1">Ivory</option>
+  <option value="color1">Midbuff</option>
+  <option value="color1">Vivid green</option>
+  <option value="color1">Dark Drama</option>
+  <option value="color1">Twlight zone</option>
+  <option value="color1">Indian Red</option>
+</select>
+</div>
+
+<div id="size" >
+Size of home:
+      <input type="radio" id="bhk" name="bhk" value="bhk">
+<label for="bhk">1 BHK</label>
+<input type="radio" id="bhk" name="bhk" value="bhk">
+<label for="bhk">2 BHK </label>
+<input type="radio" id="bhk" name="bhk" value="bhk">
+<label for="bhk">3 BHK</label>
+<input type="radio" id="bhk" name="bhk" value="bhk">
+<label for="bhk">4 BHK </label>
+<input type="radio" id="bhk" name="bhk" value="bhk">
+<label for="bhk">5 BHK </label>
+</div>
+<br>
+
+<div id="carpet" >
+Carpet:
+      <input type="text" id="carpet" name="carpet" placeholder="Enter Value:">
+      <span>sq.ft</span>
+     
+      </div>
+<br>
+<div id="submit" >
+      <input type="submit" id="submit" name="submit" value="Submit"></div>
+    <br>
+
+<a href="color.html" target="_blank">Click here to View Colors </a>
+    
+
+<div class="contact">
+<h3>Need help with full painting quotation? </h3>
+<span>Fill form below to get a professional site evaluation by our Painting Service Expert.</span><br>
+<input type="text" name="name" placeholder="Full Name*">
+<input type="email" name="email_id" placeholder="Email id*">
+<input type="text" name="mobile" placeholder="Mobile Number*">
+<input type="text" name="pincode" placeholder="Pincode*">
+
+</div>
+<div id="submit"><input type="submit" id="submit" name="submit" value="Submit"></div>
+    </form>
+
+
+  </div>
+   
+
+      
+
+ 
+
+
+
+
+
+
+</body>
+</html>
